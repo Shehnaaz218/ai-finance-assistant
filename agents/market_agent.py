@@ -1,10 +1,12 @@
+import os
 from langchain_openai import ChatOpenAI
+
 from dotenv import load_dotenv
 from api.stock_api import get_stock_price
 
 load_dotenv()
 
-llm = ChatOpenAI()
+llm = llm = ChatOpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 def market_agent(query):
     query = query.lower()
