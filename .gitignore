@@ -1,25 +1,23 @@
-
-# Python virtual environments
-venv/
-.venv/
-venv - Copy/
-
-
-# Secrets
+# Environment variables and secrets
 .env
 .env.*
 !.env.example
+
+# Virtual environments
+venv/
+venv - Copy/
 
 # Python cache
 __pycache__/
 *.py[cod]
 
-# Logs
+# Duplicate backup folders
+*-Copy/
+*- Copy/
+
+# Logs and local chat history
 *.log
+logs/
 chats/
 chat.json
 chat_history.json
-*-Copy/
-
-# Ignore duplicate backup folders
-*- Copy/
