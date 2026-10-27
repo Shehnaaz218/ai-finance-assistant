@@ -2,6 +2,8 @@
 # Python virtual environments
 venv/
 .venv/
+venv - Copy/
+
 
 # Secrets
 .env
@@ -14,4 +16,10 @@ __pycache__/
 
 # Logs
 *.log
+chats/
+chat.json
+chat_history.json
+*-Copy/
 
+# Ignore duplicate backup folders
+*- Copy/
