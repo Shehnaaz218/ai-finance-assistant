@@ -6,7 +6,11 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Initialize LLM
-llm = llm = ChatOpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+llm = ChatOpenAI(
+    model="gpt-4o-mini",
+    api_key=os.getenv("OPENAI_API_KEY"),
+    temperature=0
+)
 
 # Tax Agent Function
 def tax_agent(query):

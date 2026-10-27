@@ -6,7 +6,11 @@ from api.stock_api import get_stock_price
 
 load_dotenv()
 
-llm = llm = ChatOpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+llm = ChatOpenAI(
+    model="gpt-4o-mini",
+    api_key=os.getenv("OPENAI_API_KEY"),
+    temperature=0
+)
 
 def market_agent(query):
     query = query.lower()
